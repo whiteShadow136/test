@@ -1,1 +1,43 @@
-<mxfile host="app.diagrams.net" modified="2023-01-14T15:34:03.330Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76" version="20.8.4" etag="CGYBGG35rzlWaO95Szmk" type="github"><diagram id="B-W6rfuQd1j5NPEIauFW">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-01-14T15:40:39.440Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76" version="20.8.4" etag="nua0SODR501RH_ABVEXU" type="github">
+  <diagram id="BVCzhVca99K4TGoyKka1" name="第 1 页">
+    <mxGraphModel dx="810" dy="461" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3v-MJjbVeCIHHLPgm2u8-1" value="Reader(获取这个class文件的二进制流)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="290" width="93" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3v-MJjbVeCIHHLPgm2u8-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3v-MJjbVeCIHHLPgm2u8-2" target="3v-MJjbVeCIHHLPgm2u8-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3v-MJjbVeCIHHLPgm2u8-2" value="class（读取的应该是本地文件）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="200" width="86" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3v-MJjbVeCIHHLPgm2u8-3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="3v-MJjbVeCIHHLPgm2u8-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="250" as="sourcePoint" />
+            <mxPoint x="490" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3v-MJjbVeCIHHLPgm2u8-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3v-MJjbVeCIHHLPgm2u8-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="390" as="sourcePoint" />
+            <mxPoint x="388" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3v-MJjbVeCIHHLPgm2u8-7" value="printer(修改，增加，删除这些二进制流的0101，在代码里操作就是插入汇编语句)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="344" y="380" width="106" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3v-MJjbVeCIHHLPgm2u8-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="396.66" y="460" as="sourcePoint" />
+            <mxPoint x="396.66" y="500.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3v-MJjbVeCIHHLPgm2u8-9" value="writer(writer.visit能够转为一个字节数组，然后用classLoader加载)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="353" y="510" width="97" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
